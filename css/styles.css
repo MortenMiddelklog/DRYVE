@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Scss Document */
+/* Scss Document */
+@font-face {
+  font-family: newFontBebas;
+  src: url(https://middelklog.dk/fonts/bebasneuewoff.woff); }
+
+@font-face {
+  font-family: newFontBebasBold;
+  src: url(https://middelklog.dk/fonts/bebasneuebold.ttf); }
+
+/* FONT STYLE http://type-scale.com/ */
+html {
+  font-size: 1em; }
+  html body {
+    font-family: "Lato", "Helvetica", "Verdana", "Arial", "sans-serif";
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+    background-color: #403F3F; }
+    html body h1, html body h2, html body h3, html body h4 {
+      margin-top: 0;
+      margin-bottom: 0; }
+    html body h1 {
+      font-size: 1.8em;
+      font-family: "newFontBebasBold","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body h2 {
+      font-size: 1.6em;
+      font-family: "newFontBebasBold","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body h3 {
+      font-size: 1.6em;
+      font-family: "newFontBebas","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body h4, html body .h4-size, html body .nav-link-size {
+      font-size: 1em;
+      font-family: "newFontBebas","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body small {
+      font-size: 1em;
+      font-family: "newFontBebas","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body .hashtag {
+       font-size: 14px;
+      font-family: "newFontBebasBold","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+    html body .mini {
+      font-size: 12px; }
+    html body p {
+      font-size: 14px; }
+    html body .h4-size {
+      color: #403F3F; }
+
+#animation_container, #_preload_div_ {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.aniheight {
+  height: 600px; }
+
+.font-size16px {
+  font-size: 16px; }
+
+.button4form textarea {
+  height: 60px;
+  color: #403F3F; }
+
+.button4form label {
+  color: #403F3F; }
+
+.logo {
+  height: 15px; }
+
+.so-me-icons {
+  height: 35px;
+  width: 35px;
+  fill: #FFFFFE; }
+
+.so-me-icons:hover {
+  fill: #00A5B3; }
+
+.navbar-links {
+  color: #FFFFFE !important; }
+
+.navbar-links:hover {
+  color: #00A5B3 !important; }
+
+.store {
+  height: 46px;
+  width: 126px;
+  fill: #FFFFFE;
+  margin: 13px; }
+
+.store:hover {
+  fill: #00A5B3; }
+
+.storeblaa {
+  height: 46px;
+  width: 126px;
+  fill: #403F3F;
+  margin: 20px; }
+
+.storeblaa:hover {
+  fill: #00A5B3; }
+
+.button {
+  background-color: #00A5B3;
+  width: 90%;
+  max-width: 259px;
+  min-height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: content-box; }
+  .button h4 {
+    display: flex;
+    padding: 0 20px;
+    padding-top: 3px; }
+  .button h4 {
+    color: #FFFFFE; }
+
+.button:hover {
+  background-color: #403F3F; }
+
+.button2 {
+  background-color: transparent;
+  border: 2px solid #FFFFFE;
+  width: 90%;
+  max-width: 259px;
+  min-height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: content-box;
+  justify-content: center;
+  margin-top: 35px !important; }
+  .button2 h4 {
+    display: flex;
+    padding: 0 20px;
+    padding-top: 3px; }
+  .button2 h4 {
+    color: #FFFFFE; }
+
+.button2:hover {
+  background-color: #FFFFFE; }
+  .button2:hover h4 {
+    color: #403F3F; }
+
+.button2form {
+  width: 300px;
+  height: 35px;
+  color: #FFFFFE;
+  margin: 40px auto; }
+
+.button3 {
+  background-color: #00A5B3;
+  width: 90%;
+  max-width: 259px;
+  min-height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: content-box;
+  justify-content: center;
+  margin-top: 35px !important; }
+  .button3 h4 {
+    display: flex;
+    padding: 0 20px;
+    padding-top: 3px; }
+  .button3 h4 {
+    color: #FFFFFE; }
+
+.button3:hover {
+  background-color: #403F3F; }
+
+.button3form {
+  margin: 40px auto;
+  height: 35px;
+  color: #403F3F; }
+  .button3form h4 {
+    color: #403F3F; }
+
+.status {
+  color: #FFFFFE;
+  font-family: "newFontBebas","Lato", "Helvetica", "Verdana", "Arial", "sans-serif";
+  margin: 35px !important; }
+
+.big-checkbox {
+  width: 15px;
+  height: 15px; }
+
+.card {
+  box-shadow: 0 0px 0px 0 !important; }
+
+.infocard svg {
+  height: 150px;
+  fill: #00A5B3; }
+  .infocard svg svg:hover {
+    fill: #403F3F !important; }
+
+.infocard .svg2 {
+  height: 180px; }
+
+#contact_form .md-form .form-control {
+  padding: .55rem 0; }
+
+.nyhedsbrev .md-form .form-control {
+  padding: 0rem 0 .55rem; }
+
+.bgcolor {
+  background-color: #F9F9F9 !important; }
+
+/* Navbaren er fra https://mdbootstrap.com/sections/intros/#v-6, men er kraftigt modificeret */
+header .navbar {
+  box-shadow: 0 0px 0px 0 !important; }
+
+header .top-nav-collapse {
+  background: #403F3F !important; }
+
+header .navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  padding: 30px !important; }
+
+@media only screen and (min-width: 992px) {
+  header .navbar:not(.top-nav-collapse) {
+    background: transparent !important; } }
+
+header .view {
+  min-height: 100vh; }
+  header .view .headercontainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.companyspecs {
+  margin: 0 auto; }
+  .companyspecs h2 {
+    padding: 80px 0; }
+  .companyspecs .col-lg {
+    padding: 30px 0; }
+  .companyspecs img {
+    height: 150px;
+    margin: 40px auto; }
+  .companyspecs .overskrift {
+    height: 40px;
+    font-family: "newFontBebasBold","Lato", "Helvetica", "Verdana", "Arial", "sans-serif"; }
+  .companyspecs .grafiktekst {
+    height: 167px; }
+  .companyspecs .tekst {
+    height: 40px; }
+
+.cardscontainer .container {
+  width: 70vw;
+  margin: 0 auto; }
+
+.cardscontainer h2 {
+  padding-top: 100px !important; }
+
+.cardscontainer .imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 330px !important; }
+  .cardscontainer .imagecontainer img {
+    width: 70%; }
+
+.cardscontainer .medielink svg, .cardscontainer .medielink svg path {
+  height: 25px;
+  fill: #00A5B3; }
+
+.cardscontainer .medielink svg path:hover {
+  fill: #403F3F; }
+
+footer .nyhedsbrev {
+  margin-bottom: 100px !important;
+  margin: 0 auto; }
+  footer .nyhedsbrev h2 {
+    padding-bottom: 10px !important; }
+
+footer .inputfelter {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 1.1em; }
+  .hashtag {
+    font-size: 20px; }
+  .mini {
+    font-size: 14px; }
+  h1 {
+    font-size: 2em !important; } }
+
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 1.2em; }
+  h1 {
+    font-size: 3em !important; }
+  .hashtag {
+    font-size: 30px; } }
+
+@media only screen and (min-width: 1700px) {
+  html {
+    font-size: 1.3em; }
+  .hashtag {
+    font-size: 40px; } }

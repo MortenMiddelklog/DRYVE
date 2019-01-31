@@ -1,0 +1,813 @@
+<?php
+    include __DIR__ . "/./includes/vars.php";
+?>
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+     
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Ikke medtaget i afleveringen -->
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
+	  
+    <title>Dryve ǀ Din private delebil</title>
+	  
+    <meta name="description" content="Fri biltransport helt gratis. Lyder det for godt til at være sandt? Det er det ikke. 
+    Selvkørende biler gør snart, at du kan blive fragtet fra A til B helt gratis. En service der revolutionere måden vi tænker privat og samkørsel. Det er både godt for dig, mig og miljøet - og så er det effektivt. Vi starter i København.
+    ">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+	  
+  </head>
+
+  <body class="m-0 blue-grey" onload="init();">
+
+    <!-- Basis for navigation er lånt her:  https://mdbootstrap.com/sections/intros/#v-6 -->
+	  
+    <header>
+		
+        <!-- Navbar -->
+		
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top scrolling-navbar">
+			<div class="container-fluid">
+			  <a class="d-flex justify-content-center align-items-center px-2" href="./" hreflang="da">
+				  <img class="logo" src="./images/dryve_logowhite.svg" alt="Dryve logo">
+			  </a>
+
+			 <button class="navbar-toggler font-size16px" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span style="font-size: 22px" class="navbar-toggler-icon"></span>
+			 </button>
+
+
+			  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				  
+				<ul class="nav navbar-nav mx-auto pt-3 pt-lg-0 d-flex align-items-center">
+					<li class="nav-item d-flex align-items-center">
+						<a class="px-4 nav-link-size navbar-links" href="#hvorfor" hreflang="da">Hvorfor dryve</a>
+					</li>
+					<li class="nav-item d-flex align-items-center">
+						<a class="px-4 nav-link-size navbar-links" href="#sikkerhed" hreflang="da">Sikker og grøn</a>
+					</li>
+					<li class="nav-item d-flex align-items-center">
+						<a class="px-4 nav-link-size navbar-links" href="#kontakt" hreflang="da">Kontakt</a>
+					</li>
+				</ul>
+				  
+				 
+
+				<!-- Sociale medie ikoner  -->
+				  
+				<!-- SVG paths er eksporteret fra illustrator -->
+				  
+				<ul class="navbar-nav nav-flex-icons d-flex justify-content-center align-items-center align-self-center py-3 py-lg-0">
+				  <li class="nav-item d-flex align-items-center">
+					<a class="d-flex justify-content-center align-items-center p-2" href="#" hreflang="da">
+					  
+						<svg class="so-me-icons" data-name="facebookikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+							
+							<title>Facebook</title>
+							
+							<path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm45.55,103.58c-31.5,0-35.5-4-35,21.7v15.3h34.8l-1.4,31.2h-33.4v87.1h-33v-87.1h-23.9v-31.2h23.9v-17.8c-1.7-35.3,16.4-55.4,68.8-48.2Z"/>
+							
+						</svg>
+						
+					</a>
+				  </li>
+				  <li class="nav-item d-flex align-items-center">
+					<a class="d-flex justify-content-center align-items-center p-2" href="#" hreflang="da">
+						
+						
+					  <svg class="so-me-icons" data-name="twitterikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+						  
+						  <title>Twitter</title>
+						  
+						  <path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm81.9,135c8.2,88.2-98.5,149.8-170.3,100.5,20.5,2.1,43.1-4.1,55.4-16.4-24.6-2.1-32.8-14.4-39-26.7,6.2,2.1,14.4,2.1,18.5-2.1-22.6-6.2-30.8-26.7-30.8-39,4.1,2.1,12.3,6.2,18.5,4.1C79.8,141.2,81.8,112.5,90,104.3c8.2,10.3,41,41,80,39-6.2-43.1,43.1-59.5,69.7-34.9a102.72,102.72,0,0,0,22.6-8.2c-2.1,8.2-8.2,14.4-14.4,20.5,8.2-2.1,12.3-2.1,20.5-6.2C264.3,124.84,252,133,247.9,135Z"/>
+						  
+						</svg>
+						
+						
+					</a>
+				  </li>
+				  <li class="nav-item d-flex align-items-center">
+					<a class="d-flex justify-content-center align-items-center p-2" href="#" hreflang="da">
+					  
+						<svg class="so-me-icons" data-name="instagramikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+							
+							<title>Instagram</title><path class="cls-1" d="M209.76,89.57H122.24a32.69,32.69,0,0,0-32.66,32.65v87.56a32.69,32.69,0,0,0,32.66,32.65h87.52a32.69,32.69,0,0,0,32.66-32.65V122.22A32.69,32.69,0,0,0,209.76,89.57ZM166,215.08A49.08,49.08,0,1,1,215.08,166h0A49.08,49.08,0,0,1,166,215.08Zm50.67-88.25a11.54,11.54,0,1,1,11.54-11.54h0A11.54,11.54,0,0,1,216.67,126.83Z"/>
+							<circle class="cls-1" cx="166" cy="166" r="30.5"/>
+							<path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm95,209.78A51.38,51.38,0,0,1,209.76,261H122.24A51.38,51.38,0,0,1,71,209.78V122.22A51.38,51.38,0,0,1,122.24,71h87.52A51.38,51.38,0,0,1,261,122.22Z"/>
+							
+						</svg>
+						
+						
+					</a>
+				  </li>
+				</ul>
+
+			  </div>
+			</div>
+        </nav>
+		
+
+   		 <!-- Slut på navigation -->
+		
+		
+		
+        <div class="view">
+			
+			<video class="video-intro position-fixed" playsinline autoplay muted loop>
+			  <source src="./videos/dryve.mp4" type="video/mp4">
+			</video>
+		
+			<div class="container headercontainer text-center text-white">
+				<div style="height: 100px;"></div>
+				  
+				<div style="height: 60%;" class="row d-flex justify-content-center align-items-center flex-column mx-4">
+					<img class="mb-4" src="./images/smaaikoner_bilpoint.svg" alt="Ikon med Dryve" style="height: 65px;">
+					<h1>Sikker og selvkørende samkørsel</h1>
+					<div class="my-3">
+						<div class="py-1 hashtag">#dryve</div>
+						<div class="hashtag">#dryvedenmark</div>
+						<div class="py-1 hashtag">#dryvecopenhagen</div>
+					</div>
+				</div>
+				  
+				<div style="height: 20%">
+					<div class="col h-100 d-flex align-items-center flex-column justify-content-between">
+						<div class="container">
+							<div class="row d-flex justify-content-around flex-row">
+								<h4 class="col-4">Hvornår?</h4>
+								<h4 class="col-4">Hvor?</h4>
+								<h4 class="col-4">Pris?</h4>
+							</div>
+							<div class="row d-flex justify-content-around flex-row">
+								<h2 class="col-4 d-flex justify-content-center align-items-center">1. juni<br>2019</h2>
+								<div class="col-4 d-flex justify-content-center align-items-center">
+									<img src="./images/koebenhavn.svg" alt="Dryve starter i København" style="height: 75%; max-height:167px;">
+								</div>
+								<h2 class="col-4 d-flex justify-content-center align-items-center">Gratis</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</header>
+	 
+   <img class="" src="./images/triangle_down.svg" alt="Trekant der peger ned">
+    
+    <main class="text-center">
+		
+		<!-- Section om brug af app -->
+
+		
+        <section class="container-fluid bgcolor">
+            <div class="row">
+				<div class="col-12 pt-5 d-flex flex-column justify-content-center">
+                    <h3 class="">Bestil din dryve direkte fra din telefon</h3>
+                </div>
+				<!-- Animation der viser brug af app -->
+				<div class="col-12 d-flex flex-column justify-content-center aniheight">
+					<div id="animation_container" style="background: transparent; width:275px; height:600px;">
+						<canvas id="canvas" width="275" height="600" style="position: absolute; display: none; background: transparent;"></canvas>
+						<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:275px; height:600px; position: absolute; left: 0px; top: 0px; display: none;">
+						</div>
+					</div>
+				    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:600px; width: 275px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src='images/_preloader.gif' style='vertical-align: middle; max-height: 100%;' alt='preloader gif' /></div>
+				</div>
+				<!-- Slut på animation der viser brug af app -->
+
+                <div class="col-12 pb-4 d-flex flex-column justify-content-center">
+                    <h3 class="">Hent Dryve appen her:</h3>
+                    <div class="d-sm-flex mx-auto p-2">
+				  
+						  <a href="#" hreflang="da">
+							  
+							  <!-- SVG paths er eksporteret fra illustrator -->
+
+							  <svg class="storeblaa" data-name="appstoreikon" xmlns="http://www.w3.org/2000/svg" width="1664" height="609" viewBox="0 0 1664 609">
+
+								  <title>Find Dryve i appstore</title>
+
+								  <g id="Play1">
+									  <path class="cls-1" d="M891.36,238.3V181.17c0-7.85-3.3-10.67-8.79-10.67h-8.79V249h8.79C888.06,249,891.36,246.15,891.36,238.3Z"/>
+									  <path class="cls-1" d="M828.46,327.35H817.64v44.72h10.82c7.28,0,11.23-3.33,11.23-13.73V341.08C839.69,330.68,835.74,327.35,828.46,327.35Z"/>
+									  <path class="cls-1" d="M908.74,327.35H897.92v44.72h10.82c7.28,0,11.23-3.33,11.23-13.73V341.08C920,330.68,916,327.35,908.74,327.35Z"/>
+									  <path class="cls-1" d="M1173.93,325.27c-7.28,0-11.85,4-11.85,14.35v79.46c0,10.39,4.57,14.35,11.85,14.35s11.86-4,11.86-14.35V339.62C1185.79,329.22,1181.21,325.27,1173.93,325.27Z"/>
+									  <polygon class="cls-1" points="743.39 331.93 733.4 403.89 753.99 403.89 743.8 331.93 743.39 331.93"/>
+									  <path class="cls-1" d="M1015.05,238.22V181.07c0-7.85-3.29-10.67-8.79-10.67h-8.79v78.5h8.79C1011.76,248.9,1015.05,246.07,1015.05,238.22Z"/><path class="cls-1" d="M1366.51,0H297.87C134,0,0,137,0,304.51H0C0,472,134,609,297.87,609H1366.51c163.83,0,297.87-137,297.87-304.52h0C1664.38,137,1530.34,0,1366.51,0ZM1350,154.8h17.26V264.67H1350Zm-123.44-.1h47.1v15.7H1243.8v29h23.71v15.7H1243.8v33.8h29.83v15.7h-47.1Zm-182.59,0h25.59c17.9,0,25.59,8.32,25.59,25.27v6.75c0,11.31-3.61,18.53-11.3,21.67v.31c8.63,2.67,11.46,10.84,11.46,23.24v19.31c0,5.34.15,9.26,1.88,13.35h-17.58c-.94-2.83-1.57-4.56-1.57-13.51V231c0-10.21-3-13.5-10.84-13.5h-6v47.1h-17.27Zm-187.42.1h26.36c17.27,0,25.75,9.57,25.75,27.15v55.57c0,17.58-8.48,27.15-25.75,27.15H856.52Zm-97.16,0h17.27V264.67h-17.3Zm-54,0h45.68v15.7H722.64v30.6h22.29v15.7H722.64v47.87H705.37Zm-244.68-2.55c15.38-16,42.34-22.67,42.34-22.67s1.66,22-13,45c-15.47,24.25-51,31-51,31s5.64-36.67,21.64-53.33ZM562,407.58a93.92,93.92,0,0,1-14,26c-6,8-23.34,29.33-47,29-23-.32-41.67-13.62-58-14-14.34-.33-34,15-56,14-38.34-1.67-88.34-85-87-155,1.6-84,54.62-100,76.66-100,28,0,44.67,12,65.34,12s44-14.84,63-15c39.66-.33,63,32,63,32s-39,29-38,69,47,73,47,73S565,398.58,562,407.58Zm198.83,44.57-4.16-28.91v.41h-26l-4.16,28.5H705.32L729,306.55h31l23.71,145.6ZM789.5,154.8h21.66L828,220.57h.32V154.8H843.7V264.67H825.91l-20.72-80.21h-.31v80.21H789.5Zm73.07,202.09c0,23.29-11.24,36-34.11,36H817.64v59.28H794.76V306.55h33.7c22.87,0,34.11,12.69,34.11,36Zm80.28,0c0,23.29-11.23,36-34.11,36H897.92v59.28H875.05V306.55h33.69c22.88,0,34.11,12.69,34.11,36ZM980.2,154.7h26.37c17.27,0,25.75,9.57,25.75,27.16v55.58c0,17.58-8.48,27.16-25.75,27.16H980.2Zm38.15,299.53c-22.46,0-33.69-13.32-33.69-36.61V409.3h21.63v10c0,10.4,4.57,14.15,11.85,14.15S1030,429.7,1030,418.89c0-12.07-4.58-19.76-19.55-32.87-19.14-16.84-25.38-28.7-25.38-45.34,0-22.88,11.86-36.19,34.11-36.19s33.28,13.31,33.28,36.61v6h-21.63v-7.49c0-10.4-4.16-14.35-11.44-14.35s-11.44,4-11.44,13.94c0,10.6,4.79,18.3,19.76,31.4,19.14,16.85,25.17,28.5,25.17,46.59,0,23.72-12.07,37-34.53,37Zm112.32-126.88h-23.92v124.8h-22.88V327.35H1060v-20.8h70.72Zm7.16-62.75h-17.27V217.81l-20.88-63.11H1118l11.78,40.35h.31l11.78-40.35h16.8l-20.88,63.11Zm70.84,153c0,23.29-12.27,36.61-34.74,36.61s-34.73-13.32-34.73-36.61V341.08c0-23.3,12.27-36.61,34.73-36.61s34.74,13.31,34.74,36.61Zm-7.1-153h-22.92L1162,154.7h17.43l11.3,85.25h.32l11.3-85.25h15.86Zm69.71,187.55c-1.25-3.75-2.08-6-2.08-17.89V407.64c0-13.52-4-17.89-14.35-17.89h-7.91v62.4h-22.88V306.55H1258c23.71,0,33.9,11,33.9,33.49v9c0,15-4.79,24.55-15,28.7v.42c11.44,3.54,15.19,14.35,15.19,30.78v25.59c0,7.07.2,12.27,2.49,17.68Zm99-124.8h-39.51v38.48h31.4v20.8h-31.4v44.72h39.51v20.8h-62.39V306.55h62.39Z"/>
+									  <path class="cls-1" d="M1077.85,190.18V181.7c0-7.85-2.67-11.3-8.79-11.3h-7.85v31.4h6.28C1073.93,201.8,1077.85,199,1077.85,190.18Z"/>
+									  <path class="cls-1" d="M1257.34,327.35h-10.4V369h8.32c8.53,0,13.73-3.74,13.73-15.39V342.33C1269,331.93,1265.45,327.35,1257.34,327.35Z"/>
+								  </g>
+
+							  </svg>
+
+						  </a>
+
+
+						  <a href="#" hreflang="da">
+
+							  <svg class="storeblaa" data-name="playstoreikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1664 609">
+
+								  <title>Find Dryve i Google Playstore</title>
+
+								  <g id="Play2"><ellipse class="cls-1" cx="403.55" cy="188.66" rx="11.44" ry="12.91"/>
+									  <ellipse class="cls-1" cx="481.55" cy="188.66" rx="11.44" ry="12.91"/>
+									  <polygon class="cls-1" points="883.59 339.17 874.33 405.95 893.43 405.95 883.98 339.17 883.59 339.17"/>
+									  <path class="cls-1" d="M1084.54,174.19h-8.1V206.6h6.48c6.64,0,10.69-2.92,10.69-12v-8.75C1093.61,177.76,1090.86,174.19,1084.54,174.19Z"/>
+									  <path class="cls-1" d="M1366.51,0H297.87C134,0,0,137,0,304.51H0C0,472,134,609,297.87,609H1366.51c163.83,0,297.87-137,297.87-304.52h0C1664.38,137,1530.34,0,1366.51,0ZM1135.09,158l12.15,41.64h.32L1159.71,158h17.34l-21.55,65.13V271.4h-17.82V223.12L1116.13,158Zm-274.66-.37h27.22c17.82,0,26.57,9.88,26.57,28V243c0,18.15-8.75,28-26.57,28H860.43Zm-373.34-7.56a29.2,29.2,0,0,1,3.48-7.44,81,81,0,0,1,11.77-12.15c1-.79,2.33-1.35,3.26-.45s1.68,2.73.31,3.81a79.16,79.16,0,0,0-12,12c-1.4,1.95-2.15,5.26-3.13,7a2.22,2.22,0,0,1-3.09.56l-.18-.14c-1-.72-.66-2.42-.42-3.2ZM380.9,130c.93-.9,2.24-.34,3.25.45a81,81,0,0,1,11.77,12.15A28.87,28.87,0,0,1,399.4,150c.25.78.6,2.48-.41,3.27a2.23,2.23,0,0,1-3.14-.24l-.14-.18c-1-1.78-1.73-5.09-3.12-7a80.09,80.09,0,0,0-12-12C379.21,132.75,379.94,131,380.9,130Zm61.77,21.64c48,0,86.9,29.68,86.9,66.29,0,1,0,2-.09,3H355.85c-.06-1-.09-2-.09-3,0-36.59,38.91-66.27,86.91-66.27ZM335.87,340.91A17.14,17.14,0,0,1,318.78,358h-2.91a12,12,0,0,1-12-12V252a12,12,0,0,1,12-12h2.91a17.14,17.14,0,0,1,17.09,17.08ZM530.37,385a16,16,0,0,1-16,16H495.2v52.66a12,12,0,0,1-12,12h-8.33a12,12,0,0,1-12-12V401h-43v52.66a12,12,0,0,1-12,12h-8.34a12,12,0,0,1-12-12V401H370.88a16,16,0,0,1-16-16V240.5h175.5Zm50.5-39a12,12,0,0,1-12,12H566a17.14,17.14,0,0,1-17.08-17.09V257.08A17.14,17.14,0,0,1,566,240h2.92a12,12,0,0,1,12,12ZM704.43,157.62h47.15v16.2H722.25v31.59h23v16.2h-23V271H704.43Zm70.7,204.71c0,21.62-10.42,33.39-31.65,33.39h-10v55H712.21V315.63h31.27c21.23,0,31.65,11.77,31.65,33.38ZM778,271H760.16V157.62H778Zm64.89,179.7H786.71V315.63h21.23V431.42h34.93ZM847.15,271h-18.3l-21.39-82.78h-.32V271H791.26V157.62h22.36L831,225.5h.33V157.62H847.2ZM899.8,450.7l-3.86-26.82v.38H871.82L868,450.72H848.27l22-135.09H899l22,135.09Zm63.31-57.51V450.7H941.88V393.21l-25.67-77.58h22.58l14.47,49.6h.39l14.47-49.6h20.65ZM992.85,271.4V158h27.22c17.82,0,26.57,9.89,26.57,28v57.35c0,18.14-8.75,28-26.57,28Zm64.05,181.25c-20.84,0-31.26-12.35-31.26-34V411h20.07v9.26c0,9.65,4.24,13.12,11,13.12s11-3.47,11-13.51c0-11.19-4.25-18.33-18.14-30.49-17.76-15.63-23.55-26.63-23.55-42.07,0-21.23,11-33.58,31.65-33.58s30.88,12.35,30.88,34v5.6h-20.07v-6.95c0-9.65-3.86-13.31-10.61-13.31s-10.62,3.66-10.62,12.93c0,9.84,4.44,17,18.34,29.14,17.75,15.63,23.35,26.44,23.35,43.23C1088.94,440.3,1077.75,452.65,1056.9,452.65Zm36.88-195.19V236.73c0-10.53-3.08-13.93-11.18-13.93h-6.16v48.6h-17.82V158H1085c18.47,0,26.4,8.59,26.4,26.09v7c0,11.67-3.72,19.12-11.66,22.36v.32c8.91,2.76,11.83,11.18,11.83,24V257.7c0,5.5.16,9.55,1.94,13.77H1095.4C1094.42,268.48,1093.78,266.7,1093.78,257.46Zm67.34,77.47h-22.2V450.72H1117.7V334.93h-22.2v-19.3h65.62Zm72.37,83.75c0,21.62-11.38,34-32.23,34s-32.22-12.35-32.22-34v-71c0-21.61,11.38-34,32.22-34s32.23,12.35,32.23,34ZM1221.27,271.4h-23.65L1180.45,158h18l11.66,88h.33l11.66-88h16.36ZM1247,158h48.6v16.2h-30.78v30h24.46v16.21h-24.46V255.2h30.78v16.2H1247Zm44.56,292.73c-1.16-3.47-1.93-5.59-1.93-16.6v-24.7c0-12.54-3.67-16.6-13.32-16.6H1269v57.9h-21.23V315.63h31.46c22,0,31.45,10.23,31.45,31.07V355c0,13.89-4.44,22.77-13.89,26.63V382c10.61,3.28,14.09,13.31,14.09,28.56V434.3c0,6.56.19,11.38,2.31,16.4Zm91.87-115.79h-36.67v35.7h29.14v19.3h-29.14v41.49h36.67v19.3h-57.9V315.63h57.9Zm4.11-63.91h-17.82V157.62h17.82Z"/>
+									  <path class="cls-1" d="M1019.74,174.19h-9.07v81h9.07c5.67,0,9.08-2.92,9.08-11v-59C1028.82,177.11,1025.41,174.19,1019.74,174.19Z"/>
+									  <path class="cls-1" d="M1278.66,334.93H1269v38.59h7.72c7.91,0,12.73-3.47,12.73-14.28V348.82C1289.46,339.17,1286.18,334.93,1278.66,334.93Z"/>
+									  <path class="cls-1" d="M743.48,334.93h-10v41.49h10c6.75,0,10.42-3.09,10.42-12.74v-16C753.9,338,750.23,334.93,743.48,334.93Z"/><path class="cls-1" d="M1201.26,333c-6.75,0-11,3.66-11,13.31V420c0,9.65,4.25,13.31,11,13.31s11-3.66,11-13.31V346.31C1212.27,336.66,1208,333,1201.26,333Z"/>
+									  <path class="cls-1" d="M896.4,243.81v-59c0-8.1-3.4-11-9.07-11h-9.08v81h9.08C893,254.82,896.4,251.91,896.4,243.81Z"/>
+								  </g>
+							</svg>
+
+
+						  </a>
+						
+						
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		
+		
+		<!-- Dryve i ikoner -->
+
+        <img class="" src="./images/triangle_up-01.svg" alt="Trekant der peger op">
+		
+        <section class="container companyspecs text-white mb-5">
+			
+            <h2>Dryve - sådan helt konkret</h2>
+			
+            <div class="row mx-auto">
+				
+                <div class="col-lg">
+                    <h3 class="overskrift">Selvkørende</h3>
+                    <img class=" maxw-1" src="./images/carwhite_auto.svg" alt="Dryves biler er autonome - det vil sige selvkørende eller førerløse">
+                    <p class="tekst px-4">Dryve kører selv. Så du kan optimere din tid og lave alt muligt andet når du skal fra A til B.</p>
+                </div>
+
+                <div class="col-lg">
+                    <h3 class="overskrift">Personlig</h3>
+                    <img class=" maxw-1" src="./images/carwhite_driver.svg" alt="Det er som at have en privat taxa, der henter og bringer dig, når du har lyst">
+                    <p class="tekst px-4">Dryve henter og bringer dig automatisk, og er aldrig længere væk end nogle få tryk på din smartphone.</p>
+                </div>
+
+                <div class="col-lg">
+                    <h3 class="overskrift">Sikker</h3>
+                    <img class=" maxw-1" src="./images/carwhite_protect.svg" alt="Sikkerheden er i top. Det er mere sikkert at tage en Dryve end at selv sætte sig ind bag rettet">
+                    <p class="tekst px-4">Sæt dig ind og læn dig tilbage. Brug din tid på alt andet end at køre. Når du kører. Dryve klarer resten.</p>
+                </div>
+				
+            </div>
+			
+        </section>
+		<img class="" src="./images/triangle_down.svg" alt="Trekant, der peger ned">
+		
+		
+		<!-- Folde ud cards og pressen -->
+		
+		
+        <section class="container-fluid bgcolor cardscontainer">
+			
+			<h2>Dryve er din private delebil</h2>
+			
+			<div class="container text-lg-left">
+				
+				
+				
+				<!-- Kort 1 om Dryve i din hverdag -->
+				
+				<div id="hvorfor" style="height: 50px;"></div>
+
+				<div class="row infocard d-flex justify-content-center align-items-center">
+					
+					<div class="col-lg imagecontainer">
+						
+						<svg id="dryvehverdag" data-name="dryvehverdag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.21 172.68">
+							<title>Dryve selvkørende, privat samkørsel.</title>
+							<path class="cls-1" d="M267.5,129.6S257.9,86,242.9,82.9c-19.5-4.1-50.8-4-58.5-3.8-7.8-.2-39.1-.2-58.5,3.8-15,3.1-24.5,46.7-24.5,46.7-4,19.2-11,61.2-9.9,120,0,2.1,9,2.1,16.6,2.1a71.86,71.86,0,0,0,17.3-2.1V239.5s-.6-4.3,1.3-5.7c2.4-1.8,46-2.6,57.8-2.7,11.7.2,55.4.9,57.8,2.7,1.9,1.4,1.3,5.7,1.3,5.7v10.1a66.66,66.66,0,0,0,17.3,2.1c7.7,0,16.6,0,16.6-2.1C278.5,190.7,271.5,148.9,267.5,129.6ZM148.2,186.1c-13-1.1-33.1-2.3-39.1-2.7a1.84,1.84,0,0,1-1.7-1.8l.2-9.2a1.71,1.71,0,0,1,1.8-1.7h0c6.2.3,32.8,1.3,37.3,2.3,3.7.8,9.4,11.3,9.2,12.8C156.1,186.1,149.3,186.2,148.2,186.1Zm111.4-2.7c-6,.4-26.1,1.7-39.1,2.7-1.1.1-7.9-.1-7.9-.4-.1-1.5,5.6-11.9,9.2-12.7,4.6-1,31.1-2,37.3-2.3a1.86,1.86,0,0,1,1.9,1.7h0l.2,9.2a1.57,1.57,0,0,1-1.6,1.8Zm-2.2-29.6c-24.9-3.1-63.8-4.3-72.7-4.4h-.5c-9,.1-47.9,1.3-72.7,4.4a3.22,3.22,0,0,1-3.8-2.6h0v-.5c-.1-9.2,10.8-52.9,17.6-57.1,8.8-5.4,49.7-5.7,59.1-5.7h.5c9.3,0,50.3.2,59.1,5.7,6.7,4.2,17.7,47.9,17.6,57.1a3.4,3.4,0,0,1-3.4,3.2h-.5Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M227.9,124.5a6.21,6.21,0,0,0-6.2,6.1,6.15,6.15,0,0,0,12.3,0A6.06,6.06,0,0,0,227.9,124.5Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M133.5,130.7a6.15,6.15,0,1,0,6.2-6.1,6,6,0,0,0-6.2,6.1" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M209.7,113.4a9.1,9.1,0,1,0,9.1,9.1A9.13,9.13,0,0,0,209.7,113.4Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M238,149.6l-10.4-.6h0c0-3.3-1-5.5-2.5-8.2a9.18,9.18,0,0,1,2.8-.5c5.6,0,10.1,3.1,10.1,8.6" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M157.9,113.4a9.1,9.1,0,1,0,9.1,9.1A9.13,9.13,0,0,0,157.9,113.4Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M129.5,149a10.07,10.07,0,0,1,10.1-10.1,8.68,8.68,0,0,1,2.8.5,17.4,17.4,0,0,0-2.5,9h0l-10.4.6" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M183.8,95.1a13.5,13.5,0,1,0,13.5,13.5A13.57,13.57,0,0,0,183.8,95.1Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M224.3,147.7l-16-1v-.6c0-4-1.1-6.9-2.8-10.3a14.1,14.1,0,0,1,4.1-.7c8.1,0,14.6,2.8,14.6,10.9v1.7Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M159.2,146.9h0l-15.8.7h0c0-8.1,6.4-12.4,14.4-12.4a14.1,14.1,0,0,1,4.1.7A25.16,25.16,0,0,0,159.2,146.9Z" transform="translate(-91.38 -79.02)"/><path class="cls-1" d="M162.6,146.7H205a21.2,21.2,0,0,0-42.4,0Z" transform="translate(-91.38 -79.02)"/>
+						</svg>
+						
+					</div>
+					
+					<div style="height: 250px" class="mx-auto col-lg d-flex flex-column justify-content-between">
+							
+						<h3 class="overskrift">Hvad betyder Dryve for din hverdag?</h3>
+						
+						<p class="tekst py-3">
+							Træt af at du ikke kan finde en parkeringsplads hvor du bor? Har du en parkeringsplads, men koster den lige så meget om måneden som din bil? Sidder du ofte i kø til og fra arbejde? Så har vi løsningen til dig.
+						</p>
+						
+						<a class="button mx-auto mx-lg-0" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+							<h4 class="mx-auto mx-lg-0">En hverdag med Dryve</h4>
+						</a>
+					</div>
+				</div>
+				
+				<!-- Indhold kort1 -->
+				<div class="row">
+				  <div class="col">
+					<div class="collapse" id="collapse1">
+					  <div class="card card-body bgcolor px-0">
+						<p class="py-lg-0 py-5">
+							Dryve benytter sig af den nyeste og mest gennemtestede teknologi til at fragte dig fra A til B. Hvis du bor i en by, kender du sikkert til at have problemer med at finde en parkeringsplads eller —bås. Og når du endelig finder én, er den sikkert ret dyr. Selv om du har en parkeringsplads som en del af din husleje eller lignende, så er det i bund og grund et sted i sin økonomi hvor man kunne spare penge og bruge dem på noget sjovt som rejser eller nyt tv. Forestil dig at du hver morgen sparer tid på at skulle finde din bil hvor du har parkeret den. I stedet bestiller du med få tryk en Dryve via en app - som selvfølgelig kan bestilles på faste tidspunkter, så du har én bekymring mindre. Når det passer dig, bliver du hentet på din adresse og fragtet til dørtrinnet ved din destination, præcist som du kender det fra en taxa. En Dryve er i bund og grund en førerløs taxa som kører på grøn el, og derfor er komforten helt i top. Du kan koble dig på bilens wifi og styre musikken eller se video gennem bilens store touchscreen. Alle Dryve´s er forbundet til internettet via indbygget 4G, som gør det muligt at arbejde mens du er på farten - uden at gå på kompromis med sikkerheden eller produktiviteten. Prisen ? Vi har tilladt os at sætte reklamer på siderne og på taget af Dryve-bilen, ligesom du nok kender det fra ‘gammeldags’ taxa og busser. Det gør at du kan køre ganske gratis med Dryve - alene, sammen med venner eller hoppe i en bil med andre passagerer og udvide dit netværk. En Dryve kan bruges som alternativ til bilejerskab, Metro, S-tog og bus. Indtil videre kører vi i Storkøbenhavn, men vi arbejder så hurtigt vi kan på at få bredt det ud, således at det bliver lettere og lettere for flere og flere at benytte sig af servicen. Du kan bruge en Dryve til at levere børnene i skole, mens du selv kører til arbejde. Du kan bruge en Dryve som samkørsel med dine naboer, så I alle kan spare penge ved at eje færre biler. Du kan bruge en Dryve når du skal ud med vennerne, og du kan sagtens tage en Dryve hjem - den kører for dig, så du kan godt få et glas ekstra vin. Skal du med ?
+						</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			
+				
+				
+				
+				<!-- Kort 2 om Sikkerhed og Miljø -->
+
+				<div id="sikkerhed" style="height: 50px;"></div>
+				
+			
+				<div class="row infocard d-flex justify-content-center align-items-center flex-row-reverse">
+					
+					<div class="col-lg imagecontainer">
+						
+						<svg class="svg2" id="dryvesafe" data-name="dryvesafe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263.75 332.85">
+							<title>Dryve har sikkerheden i top og er godt for miljøet</title>
+							<path class="cls-1" d="M198.36,89.06l-.2-8.45s8.15-1.77,13.11-8.51a28.12,28.12,0,0,0,5.32-13.82s-7.8-.7-12.41,3.55a40.15,40.15,0,0,0-6.73,7.79l1.06-22.32s21.62-1.42,32.6-19.13,9.22-26.93,9.22-26.93S219.07,2,208.08,15.06s-14.53,23.74-14.53,28,.36-12-11.33-20.55-20.56-6.73-20.56-6.73,2.48,16.65,11.7,24.09S189.3,47.3,189.3,47.3l.58,41.81C191.44,89,193,89,194.61,89,195.87,89,197.12,89,198.36,89.06Z" transform="translate(-52.78 -1.24)"/><path class="cls-1" d="M185.23,210.69a12.6,12.6,0,0,0,5-5.3c1.68-3.86-.38-6.14,1.71-10.07,1.33-2.51,3.13-3.41,2.73-4.95-.29-1.1-1.44-1.58-3.07-2.39-2.79-1.39-5.35-3.19-8-4.78-4-2.36-3.34-3-7.34-5.64-5.24-3.48-8.93-5.93-13.15-5.29-3.56.54-6.19,3.09-9.22,2.22a3.5,3.5,0,0,1-2.22-1.54c-.37-.75,0-1.13-.17-2.22-.1-.69-.3-1-2-3.75-1.2-1.91-1.42-2.26-1.54-2.91a4.93,4.93,0,0,1,.35-2.73A7.06,7.06,0,0,0,146,162c-2,1-2.38,2.42-3.42,2.4s-2-1.93-2.22-2.4c-.77-1.75-1.14-4.84.85-7,2.45-2.65,6.36-1.58,7.18-1.36a9.16,9.16,0,0,1,5.29,4.1c1.78-7.89,5.06-11.41,7.85-13.15,3.51-2.19,6.16-1.52,9.74-5,2.74-2.63,4.84-6.54,5.63-6.15.12.06.14.18.21.37a4.63,4.63,0,0,0,4.57,2.7,3.88,3.88,0,0,0,2.39-1.87c1.53-2.57.49-6.74-1.88-9.05-1.76-1.73-4.28-2.44-4.09-3.08.05-.17.25-.22.7-.39a27.8,27.8,0,0,0,2.54-1.32c2.21-1.11,3.32-1.66,3.59-2,1.06-1.5.32-4.29-1-6-2.62-3.3-7.89-2.84-9.05-2.73-5.72.51-6.58,3.87-12.8,4.61a11.5,11.5,0,0,1-3.81-.11A67.55,67.55,0,0,1,194.61,104c1.42,0,2.82,0,4.22.14-1.06.27-2.12.56-3.19.86-3.19.88-5.81,1.76-7.67,2.42,0,0-1.15,0-1.21.31-.1.56,4,.67,5.3,3.07.44.85.24,2.73-.17,6.49-.2,1.78-.31,2.23,0,2.9a4.6,4.6,0,0,0,5.12,2.22c1.53-.38,1.44-1.69,3.41-3.41.91-.79,1.74-1.26,5-2.56,5.11-2.09,5.64-2,7.17-2.74a18,18,0,0,0,6.26-5.23,68.08,68.08,0,0,1,16.29,9c-2,1-3.82,2.54-3.77,4s2.08,2.12,2,4.09a3.17,3.17,0,0,1-1.88,2.91c-1.17.33-2.52-.68-4.78-2.39-1.54-1.16-2.28-2-2.9-1.71s-.27.87-.86,1.88c-1,1.68-2.6,1.45-2.9,2.73a4.54,4.54,0,0,0,.34,2.22c1.91,0,2,0,2,0,.84.14,1.89,1.29,2.73,6a8.26,8.26,0,0,0-5,2.56c-.7.79-1.7,1.92-1.54,3.24.2,1.56,1.84,2,1.88,3.59a3.2,3.2,0,0,1-.85,2c-3.6,4.6-8.29,10.61-9.39,15.36A13.73,13.73,0,0,0,213.74,176a14.16,14.16,0,0,0,8.2,3.92c5,.59,7.05-2,9.56-.51,1.25.76,1,1.57,3.42,7.51,2.11,5.2,2.56,5.24,2.73,7,.37,4-1.84,4.57-1.88,8.54,0,2.65,1.46,5.33,4.44,10.59,1.48,2.61,2.55,4.49,3.39,5.73a68.37,68.37,0,0,1-19.77,14.32,10.31,10.31,0,0,1,3.56,6.17,11.56,11.56,0,0,1,0,4.27,78.82,78.82,0,1,0-74.82-5c7.16-1.11,14.68-2.19,22.34-3.25C176.57,226.8,179,215.21,185.23,210.69Z" transform="translate(-52.78 -1.24)"/><path class="cls-1" d="M63.42,333.37l71,.72c5.76.07,10.59-2.83,10.92-6.57.06-3.45,2.1-6.75,5.73-9.27,9.21-6,107.42-30.91,116.63-38.89s50.58-63.49,48.78-74.27-14.38-14.51-21.15-7.5c-3,3.08-33.77,55.84-46,58.83s-72.13,17-73.67,9,29.59-10.67,40.34-14.66,10.31-18.25-3.51-16.25-95.15,11-110.49,19.94c-11.86,7-37.46,50.18-48.48,69.49-2.1,3.6.69,7.63,6.24,9A16.15,16.15,0,0,0,63.42,333.37Z" transform="translate(-52.78 -1.24)"/>
+						</svg>
+						
+					</div>
+					
+					
+					<div style="height: 250px" class="mx-auto col-lg d-flex flex-column justify-content-between">
+							
+							<h3 class="overskrift">Sikker og grøn</h3>
+
+							<p class="tekst py-3">
+								Dryve bruger biler fra franske Navya, som har kørt millioner af kilometer før vi kunne godkende dem. Nu kan du læne dig tilbage og nyde følelsen af at have en personlig chauffør. Navya er en elbil som let og lydløst får dig fra A til B på en helt ny og bæredygtig måde.
+							</p>
+
+							<a class="button mx-auto mx-lg-0"  data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+								<h4 class="mx-auto mx-lg-0">Læs mere</h4>
+							</a>
+				
+					</div>
+					
+				</div>
+				
+				<!-- Indhold kort2 -->
+
+				<div class="row mx-auto">
+				  <div class="col">
+					<div class="collapse" id="collapse2">
+					  <div class="card card-body bgcolor px-0">
+						<p class="py-lg-0 py-5">
+							  Navya er fremstillet udfra de nyeste tiltag indenfor blandt andet 3D-teknologi og sætter et minimalt fodaftryk i dit CO2-regnskab. En Dryve-bil er koblet til internettet via 4G, og på den måde også til Navya´s såkaldte ‘Machine learning’, som betyder at alle enheder lærer af hinanden i trafikken. Dryve har valgt netop Navya som leverandør af biler, fordi Navya har leveret selvkørende enheder til hele verden, og du kan finde dem i blandt andet Las Vegas, Lyon, Stockholm, Reykjavik, Hong Kong samt på flere universiterer og lufthavne i verden. Disse enheder har indsamlet værdifuld test-data, som har gjort at Navya nu er på den absolutte forkant med uviklingen og sikkerheden samtidig med at den passer på miljøet. Det vil vi gerne hos Dryve give videre til dig. Derfor kan du medbringe dine børn, da en Dryve-bil er udstyret med integrerede børnesæder. Der er ligeledes komfortabel plads til 6 voksne mennesker i den lyse kabine som selvfølgelig er nærved lydløs - da en Dryve drives frem af ‘ren’ el, lagret på bilens batterier fra solfangeranlæg - til glæde for både nuværende og kommende generationer. Skal du med ?
+						  </p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				
+				<!-- Kort 3 Kontakt -->
+
+				<div id="kontakt" style="height: 50px;"></div>
+
+				<div class="row infocard d-flex justify-content-center align-items-center">
+					
+					<div class="col-lg imagecontainer">
+						
+						<svg id="kontaktdryve" data-name="kontaktdryve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.21 172.68">
+							<title>Kontakt Dryve</title>
+							<path class="cls-1" d="M267.5,129.6S257.9,86,242.9,82.9c-19.5-4.1-50.8-4-58.5-3.8-7.8-.2-39.1-.2-58.5,3.8-15,3.1-24.5,46.7-24.5,46.7-4,19.2-11,61.2-9.9,120,0,2.1,9,2.1,16.6,2.1a71.86,71.86,0,0,0,17.3-2.1V239.5s-.6-4.3,1.3-5.7c2.4-1.8,46-2.6,57.8-2.7,11.7.2,55.4.9,57.8,2.7,1.9,1.4,1.3,5.7,1.3,5.7v10.1a66.66,66.66,0,0,0,17.3,2.1c7.7,0,16.6,0,16.6-2.1C278.5,190.7,271.5,148.9,267.5,129.6ZM148.2,186.1c-13-1.1-33.1-2.3-39.1-2.7a1.84,1.84,0,0,1-1.7-1.8l.2-9.2a1.71,1.71,0,0,1,1.8-1.7h0c6.2.3,32.8,1.3,37.3,2.3,3.7.8,9.4,11.3,9.2,12.8C156.1,186.1,149.3,186.2,148.2,186.1Zm111.4-2.7c-6,.4-26.1,1.7-39.1,2.7-1.1.1-7.9-.1-7.9-.4-.1-1.5,5.6-11.9,9.2-12.7,4.6-1,31.1-2,37.3-2.3a1.86,1.86,0,0,1,1.9,1.7h0l.2,9.2a1.57,1.57,0,0,1-1.6,1.8Zm-2.2-29.6c-24.9-3.1-63.8-4.3-72.7-4.4h-.5c-9,.1-47.9,1.3-72.7,4.4a3.22,3.22,0,0,1-3.8-2.6h0v-.5c-.1-9.2,10.8-52.9,17.6-57.1,8.8-5.4,49.7-5.7,59.1-5.7h.5c9.3,0,50.3.2,59.1,5.7,6.7,4.2,17.7,47.9,17.6,57.1a3.4,3.4,0,0,1-3.4,3.2h-.5Z" transform="translate(-91.38 -79.02)"/>
+						</svg>
+						
+					</div>
+					
+					<div style="height: 250px" class="mx-auto col-lg d-flex flex-column justify-content-between">
+						
+						<h3 class="overskrift">Har du spørgsmål?</h3>
+
+						<p class="tekst py-3">
+							Hvad betyder alt det her teknologi og hvilke muligheder giver det dig? Hvad med loven og sikkerheden? Uanset om du synes det er vildt spændende, eller du ikke er helt sikker på om det er noget for dig, står vi klar til at svare på dine spørgsmål.
+						</p>
+						<a class="button mx-auto mx-lg-0" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+							<h4 class="mx-auto mx-lg-0">Kontakt</h4>
+						</a>
+						
+					</div>
+				</div>
+				
+				<!-- Indhold kort3 - kontaktformular -->
+
+				<div class="row">
+				  <div class="col">
+					<div class="collapse" id="collapse3">
+					  <div class="card card-body bgcolor px-0">
+						  <div class="card card-body bgcolor px-0">
+							
+						  <h2>Kontakt os her</h2>
+							
+						  <p class="py-lg-0 py-5">Ved brug af denne kontaktformular accepterer du vores privatlivspolitik, se den her: 
+							  
+							  <a id="privatlivspolitik" data-toggle="modal" data-target="#privatlivsModal">
+								  Cookie- og privatlivspolitik
+							  </a>
+							</p>
+
+						  <div class="row">
+
+
+							  <div class="col">
+								  <form id="contact-form" name="contact-form" action="mail.php" method="POST"  onsubmit="return validateForm()" >
+
+
+									  <div class="row">
+
+
+										  <div class="col">
+											  <div class="md-form button3form">
+												  <input type="text" id="name" name="name" class="form-control">
+												  <label for="name" class="h4-size">Dit navn *</label>
+											  </div>
+										  </div>
+
+									  </div>
+
+
+									  <div class="row">
+
+										  <div class="col-md-6">
+
+											  <div class="md-form button3form">
+												  <input type="text" id="email" name="email" class="form-control">
+												  <label for="email" class="h4-size">Din email *</label>
+											  </div>
+										  </div>
+
+
+										  <div class="col-md-6">
+											  <div class="md-form button3form">
+												  <input type="text" id="phone" name="phone" class="form-control">
+												  <label for="phone" class="h4-size">Telefon nr.</label>
+											  </div>
+										  </div>
+
+									  </div>
+
+									  <div class="row d-none">
+										  <div class="col">
+											  <div class="md-form">
+												  <input type="text" id="robottest" name="robottest" class="form-control">
+												  <label for="robottest" class="h4-size">Skriv intet her</label>
+											  </div>
+										  </div>
+									  </div>
+
+									  <div class="row">
+										  <div class="col-md-12">
+											  <div class="md-form button4form">
+												  <textarea id="message" name="message" class="md-textarea w-100"></textarea>
+												  <label for="message" class="h4-size">Din besked</label>
+											  </div>
+										  </div>
+									  </div>
+
+
+									  <div class="form-check pt-3">
+										<input type="checkbox" class="form-check-input big-checkbox" name="checknewsletter" id="newsletter">
+										<label for="newsletter" class="form-check-label h4-size">Tilmeld dig vores nyhedsbrev</label>
+									  </div>
+								  </form>
+								  
+								  <div class="d-flex justify-content-center align-items-center text-white">
+                    					<a class="button3 h4-size" onclick="validateForm()">Send</a>
+								  </div>
+
+								  <div class="status text-dark text-center" id="status"></div>
+
+							  </div>
+						  </div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+					</div>
+			
+				
+				
+				
+				<!-- Dryve i pressen -->
+	
+				<h2 class="text-center">Hvad skriver de om dryve i Pressen?</h2>
+					
+					<div class="row d-flex align-items-center justify-content-center py-5">
+				
+						<!-- logo er fra Zetlands hjemmeside -->
+						<a href="https://www.zetland.dk" class="col-lg medielink d-flex justify-content-center align-items-center p-3">
+							<svg version="1.1" id="pressezetland" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 425.8 94.3" xml:space="preserve">
+								<g>
+									<path d="M0,76.2V64.8l25.4-51.3H0.9V0h42v10.4L17.1,62.6h26.4v13.6H0z"></path>
+									<path d="M72.5,51.9v4.9c0,4.6,2.4,6.8,7.2,6.8c5.3,0,6.9-2.7,7.1-5.8h13.8c-0.3,12.8-8.6,19.3-21.1,19.3C66.8,77.1,58,69.2,58,57.1
+										V40c0-13,9.3-20.7,21.6-20.7c12.1,0,20.8,7.8,20.8,20.6v12H72.5z M86.1,39.8c0-4.7-2.7-7.6-6.8-7.6c-3.9,0-6.8,2.7-6.8,7.6v2.5
+										h13.7V39.8z"></path>
+									<path d="M137.8,76.2c-11.5,0-16-4.9-16-16.4v-27h-6.9V20.2h6.9V6.8h14.4v13.3h8.5v12.7h-8.5v24.9c0,3.9,1,5.7,5,5.7h3.6v12.8H137.8
+										z"></path>
+									<path d="M162.1,76.2V0h14.4v76.2H162.1z"></path>
+									<path d="M225.3,76.2v-4.6c-2,2.6-5.8,5.5-11.9,5.5c-11.4,0-17.2-7.6-17.2-20.3V39.6c0-11.6,6.2-20.4,17.9-20.4
+										c5.9,0,9.3,2.6,11,4.8v-3.9H239v56H225.3z M224.4,40.1c0-5.3-2.7-8-6.9-8c-4.1,0-6.8,2.8-6.8,8.2v15.8c0,5.2,2.7,8.1,6.9,8.1
+										c3.8,0,6.8-2.7,6.8-7.2V40.1z"></path>
+									<path d="M287.3,76.2V39.3c0-4.6-2.2-7.2-6.2-7.2s-6.6,2.8-6.6,6.8v37.2h-14.4v-56h14v4.1c2.1-2.7,5.9-5,11.2-5
+										c11,0,16.6,8.4,16.6,19.7v37.2H287.3z"></path>
+									<path d="M350.4,76.2v-4.6c-2,2.6-5.8,5.5-11.9,5.5c-11.4,0-17.2-7.6-17.2-20.3V39.6c0-11.6,6.2-20.4,17.9-20.4
+										c5.3,0,8.5,2.2,10.4,4.4V0h14.4v76.2H350.4z M349.5,40.1c0-5.3-2.7-8-6.8-8c-4.3,0-6.9,2.8-6.9,8.2v15.8c0,5.2,2.7,8.1,6.9,8.1
+										c3.9,0,6.8-2.7,6.8-7.2V40.1z"></path>
+									<path d="M379.2,94.3V82.7h46.6v11.6H379.2z"></path>
+								</g>
+							</svg>
+						</a>
+						
+						<!-- logo er fra Euromans hjemmeside -->
+						<a href="https://www.euroman.dk" class="col-lg medielink d-flex justify-content-center align-items-center p-3">
+							<svg viewBox="0 0 291.16 46.346668" height="46.346668" width="206.16" id="presseeuroman" version="1.1">
+									<g transform="matrix(1.3333333,0,0,-1.3333333,0,46.346667)" id="euroman1">
+										<g transform="scale(0.1)" id="euroman2">
+											<g id="g14">
+												<g clip-path="url(#euroman)" id="euroman3">
+													<path id="path22" d="M 47.9883,342.254 H 251.797 L 238.75,250.215 h -92.93 l -4.55,-32.156 h 84.843 l -12.48,-87.571 H 128.77 l -4.708,-33.0935 h 96.114 L 207.09,5.37109 H 0 L 47.9883,342.254"></path>
+													<path id="path24" d="M 548.516,342.254 520.078,142.996 C 506.172,44.6953 444.316,0 359.453,0 274.59,0 225.508,44.6953 239.492,142.996 L 267.91,342.254 H 378.027 L 351.328,154.609 C 347.578,128.242 345.059,105 374.453,105 c 29.297,0 33.438,23.242 37.188,49.609 l 26.738,187.645 h 110.137"></path>
+													<path id="path26" d="m 651.523,193.027 h 7.618 c 18.066,0 36.582,3.145 40.214,28.145 3.653,25.906 -12.402,29.043 -31.23,29.043 h -8.516 z M 565.02,342.254 h 133.105 c 68.281,0 121.602,-32.145 109.492,-117.051 -7.207,-50.933 -27.988,-72.422 -71.133,-87.598 L 788.77,5.37109 H 675 L 640.156,113.484 624.707,5.37109 H 517.012 L 565.02,342.254"></path>
+													<path id="path28" d="m 923.777,171.145 c -5.437,-38.418 14.067,-64.836 47.446,-64.836 33.377,0 60.477,26.418 65.927,64.836 5.08,35.73 -12.39,65.664 -47.267,65.664 -35.02,0 -61.035,-29.934 -66.106,-65.664 z m 224.633,1.765 C 1132.98,64.7969 1048.56,0 956.113,0 863.672,0 797.695,64.7969 813.047,172.91 c 15.156,105.891 100.5,174.711 192.583,174.711 92.06,0 157.85,-68.82 142.78,-174.711"></path>
+													<path id="path30" d="m 1216.06,342.254 h 113.33 l 16.66,-176.949 69.81,176.949 h 112.17 L 1529.91,5.37109 H 1423.28 L 1432.72,189.871 1355.36,5.37109 h -64.34 L 1271.09,189.871 1225.51,5.37109 h -106.59 l 97.14,336.88291"></path>
+													<path id="path32" d="m 1716.59,127.352 -7.85,102.726 -36.43,-102.726 z M 1626.44,5.37109 h -116.6 L 1663.1,342.254 h 121.86 L 1845.14,5.38281 1728.5,5.37109 1724.45,47.3945 h -83.22 L 1626.44,5.37109"></path>
+													<path id="path34" d="m 1879.72,342.254 h 105.76 l 68.13,-175.875 24.7,175.875 h 105.35 l -48,-336.87119 H 2030.34 L 1961.43,175.066 1937.08,5.38281 1831.8,5.37109 1879.72,342.254"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+						</a>
+
+						<!-- logo er fra Børsens hjemmeside -->
+						<a href="http://borsen.dk" class="col-lg medielink d-flex justify-content-center align-items-center p-3">
+							<svg id="presseborsen" data-name="presseborsen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 458.19 66.36">
+								<title>presseborsen</title>
+								<path class="cls-1" d="M.77,3.86c16.84.14,33.74-1.4,50.49.88,12.4,1.69,17.64,12.83,11.8,23.12-2.45,4.31-6.4,5.14-10.73,5.57.48,1.23,1.45,1.16,2.32,1.3C62,35.91,65.5,39.06,66.7,45.61c1.35,7.34-1.45,13.85-7.43,17.15-5.6,3.08-11.79,3.47-18,3.54-13.51.15-27,.12-40.53.16V3.86Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M116.78,19.24c-6.54-2.46-12.7-2.61-17.84,2.34C93.28,27,93.77,34,94.93,41.84l41.37-38h10.9L138,12.58c7.08,8,9.37,17.36,7.75,27.6C143.12,56.61,131,67,113.6,68a55.06,55.06,0,0,1-18.74-1.7c-14.93-4.41-23-16.45-22.62-33.59.35-14.28,10.37-26,25.45-29.48C108.07.8,118.3,1.26,128.69,6Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M382.15,29c2.57,12.29,1.28,24.64,1.52,37.16H363.26V4h23.33c8.06,12.4,16.84,24.73,24.25,38.09-2.46-12.67-1.6-25.39-1.67-38.23h20.31V66.07H405.89Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M183.39,44.31h-5.91V66.08h-22V4.28a1.31,1.31,0,0,1,.52-.44c15.17.19,30.39-1.16,45.5.83C214.83,6.42,220.7,15,218,27.78c-1.5,7-6,11.14-12.71,13.1-1.71.5-3.49.76-5.83,1.26l7.83,1.55,16.62,22.47H197.43Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M225.06,59.79l9.39-12.67a35.64,35.64,0,0,0,27,5.53c2.33-.44,4.85-1,5.06-3.89.24-3.21-2.57-4-4.9-4.46-5.42-1-10.92-1.7-16.38-2.53a34.58,34.58,0,0,1-8.86-2.6c-6.25-2.78-10.84-7-11.18-14.35-.35-7.54,2.54-13.57,9-17.65a34.46,34.46,0,0,1,16.81-5c11.27-.65,22.36.08,32.88,4.74.69.31,1.35.71,2.33,1.23L277,20.93c-8.07-3.57-16.17-5-24.64-3.12-3,.67-5.47,1.94-4.08,6,4.52,2.8,9.79,2.56,14.82,3.17a69.76,69.76,0,0,1,14.3,2.89C292.4,35,291,54.44,282,61.07a34.64,34.64,0,0,1-17.49,6.48c-11.52,1.19-22.87.65-33.66-4.16A19.58,19.58,0,0,1,225.06,59.79Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M318.64,41.55V52.41H354V66.14H297V4h56.74V17.27h-35v10.8H346.9V41.55Z" transform="translate(-0.74 -1.77)"/><path class="cls-1" d="M438.79,45.76h20.14V66.05H438.79Z" transform="translate(-0.74 -1.77)"/><path class="cls-2" d="M23.29,52.44V41c5.42,0,10.75-.24,16.05.09,3.07.19,5.16,2.06,5.08,5.59a5.39,5.39,0,0,1-5.52,5.69C33.82,52.64,28.7,52.44,23.29,52.44Z" transform="translate(-0.74 -1.77)"/><path class="cls-3" d="M23.36,27.61V17.16c4.83,0,9.67-.2,14.48.08,2.94.17,5,1.81,5,5.21s-2.21,4.94-5.15,5.1C33,27.8,28.26,27.61,23.36,27.61Z" transform="translate(-0.74 -1.77)"/><path class="cls-2" d="M98.89,48.38,122.28,26.9c3.66,6.55.8,18.67-4,22.36C113,53.3,104.49,53.17,98.89,48.38Z" transform="translate(-0.74 -1.77)"/><path class="cls-3" d="M177.55,31.22c-.1-1-.22-1.58-.22-2.19V17c4.77,0,9.3-.55,13.83.41,3.83.81,5.7,3.15,5.52,7.11s-2.48,5.72-6,6.31C186.43,31.6,182.2,31.31,177.55,31.22Z" transform="translate(-0.74 -1.77)"/>
+							</svg>
+						</a>
+
+						<!-- logo er fra tv2s hjemmeside -->
+						<a href="#" class="col-lg medielink d-flex justify-content-center align-items-center p-3">
+							<svg id="pressetv2" data-name="pressetv2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375.81 171.51">
+								<title>pressetv2</title>
+								<path class="cls-1" d="M185.64,0a12.78,12.78,0,0,1-9,3.67H36.42a13,13,0,0,0-11,6.06L0,47.14H.52a12.79,12.79,0,0,1,9-3.68H150.69a13,13,0,0,0,10-6L186.16,0h-.52"/><path class="cls-1" d="M363,124.39a12.78,12.78,0,0,1-9,3.67H213.72a13,13,0,0,0-11,6.07l-25.4,37.38h.51a12.88,12.88,0,0,1,9-3.67H328a13,13,0,0,0,10-6l25.43-37.42h-.5"/><path class="cls-1" d="M329.05.65h0L221.25.71a13,13,0,0,0-11,6.07L185.18,44.19h.91a12.16,12.16,0,0,1,8.46-3.58c1.65-.06,127.26,0,127.28,0,6.65,0,9.62,5.27,8.22,11.92-1.35,6.44-7.87,11.69-14.28,12l-58.86.12a13,13,0,0,0-11,6.08L214,117.64a9.11,9.11,0,0,1,1.28,0c5.35-8.12,17.58-13.32,23.43-13.36H309.1C337.64,104,368.94,81,374.9,52.5,380.82,24.27,357.11,1.3,329.05.65"/><path class="cls-1" d="M178.14,64.67a13,13,0,0,0-11.09,5.85L109,156.06l10.56-92.42H77L66.86,152.36a20.56,20.56,0,0,0,.23,4.07c0,.22.09.41.13.61a15.43,15.43,0,0,0,4.93,8.57,10.9,10.9,0,0,0,3.08,1.65,11.4,11.4,0,0,0,3,.59h29.55l34.53,0A13,13,0,0,0,153.4,162l62.21-91a13.15,13.15,0,0,1,8.59-6l.33-.48-46.39.13"/>
+							</svg>
+						</a>
+
+						<!-- logo er fra drs hjemmeside -->
+						<a href="https://www.dr.dk" class="col-lg medielink d-flex justify-content-center align-items-center p-3">
+							<svg id="pressedr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399 119.71">
+								<title>pressedr</title>
+								<path class="cls-1" d="M278.39,40.25H248.54c-.69,0-.91.23-.91.91V61.77c0,.68.22.91.91.91h29.85c10,0,14.25-3.1,14.25-11.44S288.39,40.25,278.39,40.25Z"/><path class="cls-1" d="M0,0V119.71H399V0ZM159,88.8H73.6a1,1,0,0,1-1.13-1.14V30.15A1,1,0,0,1,73.6,29H159c25.08,0,37.74,8.1,37.74,29.7S184.07,88.8,159,88.8Zm173.8.25H290a3.3,3.3,0,0,1-2.42-.83L270.35,74a2.65,2.65,0,0,0-2-.6H248.49c-.68,0-.91.22-.91.9V87.91a1,1,0,0,1-1.14,1.14H212a1,1,0,0,1-1.13-1.14V30.4A1,1,0,0,1,212,29.27h93.57c15.39,0,23.72,7,23.72,19.77s-9.7,18.71-22.2,18.71c-.53,0-.76.16-.76.46s.38.53,1,1L332,86.63c.6.45,1.66,1.13,1.66,1.73S333.39,89.05,332.79,89.05Z"/><path class="cls-1" d="M136.88,40H110.13c-.76,0-.91.3-.91.9v36c0,.6.15.9.91.9h26.75c15.91,0,22.27-4.62,22.27-18.94S152.79,40,136.88,40Z"/>
+							</svg>
+						</a>
+						
+					</div>
+				</div>
+		</section>
+	</main>
+	
+
+
+    
+	<!-- Footer -->
+    
+    <div><img class="" src="./images/triangle_up-01.svg" alt="Trekant op"></div>
+
+    <footer class="page-footer text-center justify-content-center align-items-end">
+		
+	<div class="container">
+		
+      <section class="container nyhedsbrev bottom">
+		  
+          <h2>Følg med</h2>
+		  
+          <div class="p-3 d-flex justify-content-center align-items-center">
+			
+          	<a class="px-2" href="#" hreflang="da">
+				  
+				<svg class="so-me-icons" data-name="facebookikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+					
+					<title>Facebook</title>
+					
+					<path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm45.55,103.58c-31.5,0-35.5-4-35,21.7v15.3h34.8l-1.4,31.2h-33.4v87.1h-33v-87.1h-23.9v-31.2h23.9v-17.8c-1.7-35.3,16.4-55.4,68.8-48.2Z"/>
+					
+				</svg>
+				
+			</a>
+		  
+		  
+			<a class="px-2" href="#" hreflang="da">
+				
+			  <svg class="so-me-icons" data-name="twitterikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+				  
+				  <title>Twitter</title>
+				  
+				  <path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm81.9,135c8.2,88.2-98.5,149.8-170.3,100.5,20.5,2.1,43.1-4.1,55.4-16.4-24.6-2.1-32.8-14.4-39-26.7,6.2,2.1,14.4,2.1,18.5-2.1-22.6-6.2-30.8-26.7-30.8-39,4.1,2.1,12.3,6.2,18.5,4.1C79.8,141.2,81.8,112.5,90,104.3c8.2,10.3,41,41,80,39-6.2-43.1,43.1-59.5,69.7-34.9a102.72,102.72,0,0,0,22.6-8.2c-2.1,8.2-8.2,14.4-14.4,20.5,8.2-2.1,12.3-2.1,20.5-6.2C264.3,124.84,252,133,247.9,135Z"/>
+				  
+				</svg>
+				
+			</a>
+	  
+	  
+			<a class="px-2" href="#" hreflang="da">
+			  
+				<svg class="so-me-icons" data-name="instagramikon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332">
+					
+					<title>Instagram</title><path class="cls-1" d="M209.76,89.57H122.24a32.69,32.69,0,0,0-32.66,32.65v87.56a32.69,32.69,0,0,0,32.66,32.65h87.52a32.69,32.69,0,0,0,32.66-32.65V122.22A32.69,32.69,0,0,0,209.76,89.57ZM166,215.08A49.08,49.08,0,1,1,215.08,166h0A49.08,49.08,0,0,1,166,215.08Zm50.67-88.25a11.54,11.54,0,1,1,11.54-11.54h0A11.54,11.54,0,0,1,216.67,126.83Z"/>
+					<circle class="cls-1" cx="166" cy="166" r="30.5"/>
+					<path class="cls-1" d="M166,0A166,166,0,1,0,332,166,166,166,0,0,0,166,0Zm95,209.78A51.38,51.38,0,0,1,209.76,261H122.24A51.38,51.38,0,0,1,71,209.78V122.22A51.38,51.38,0,0,1,122.24,71h87.52A51.38,51.38,0,0,1,261,122.22Z"/>
+					
+				</svg>
+				
+			</a>
+			
+          </div>
+
+          <h4 class="p-3">Er du teknologiinteresseret? Eller måske first mover? Måske kan du bare slet ikke vente på, at Dryve kommer til Danmark? <br> Bliv opdateret før alle andre. Tilmeld dig her.</h4>
+
+          <div>
+
+              <form id="newsletter-form" name="newsletter-form" action="newsletter.php" method="POST" onsubmit="return validateNews()">
+
+               		<div class="row inputfelter justify-content-center align-items-center">
+                        <div class="col-5-md col-12-sm md-form button2form">
+                            <input type="text" id="newslname" name="newslname" class="form-control button2form text-white">
+                            <label for="newslname" class="h4-size text-white">Dit navn</label>
+                        </div>
+						<div class="col-5-md col-12-sm md-form button2form">
+                            <input type="text" id="newslemail" name="newslemail" class="form-control button2form text-white">
+                            <label for="newslemail" class="h4-size text-white">Din email *</label>
+						</div>
+                    </div>
+
+				 
+                <div class="row d-none">
+                    <div class="col">
+                        <div class="md-form">
+                            <input type="text" id="newslrobottest" name="newslrobottest" class="form-control">
+                            <label for="newslrobottest">Skriv intet her</label>
+                        </div>
+                    </div>
+                </div>
+				  
+              </form>
+
+                <div class="pt-2 d-flex justify-content-center align-items-center">
+                    <a class="button2" onclick="validateNews()"><h4>Send</h4></a>
+                </div>
+			  
+                <div class="status" id="statusNews"></div>
+			  
+          </div>
+		  
+		
+		  
+      </section>
+		
+		<div class="pb-5">
+			<h2>#dryve</h2>
+			<h2>#dryvedenmark</h2>
+			<h2>#dryvecopenhagen</h2>
+		</div>
+         
+    
+      <div class="container">
+		  
+			<div class="d-flex justify-content-center align-items-center py-3">
+				<img src="./images/smaaikoner_bilpoint.svg" alt="Ikon med Dryve" style="height: 50px;">
+			</div>
+		 
+		  	<div class="row py-3">
+
+				<div class="col">
+					<a class="d-flex justify-content-center align-items-center" href="./" hreflang="da">
+						<img class="logo" src="./images/dryve_logowhite.svg" alt="Dryve logo">
+					</a>
+				</div>
+
+			</div>
+		 
+		  	<a class="d-flex justify-content-center align-content-center py-3" data-toggle="modal" data-target="#privatlivsModal">
+				<p class="mini d-flex justify-content-center align-content-center" style="color:#A4A4A4;">Privatlivspolitik</p>
+			</a>
+		  	
+		  	<a href="./" hreflang="da"><p class="mini d-flex justify-content-center align-content-center" style="color:#A4A4A4;">© Copyright Borregaard, Pedersbæk og Tofthøj - alle rettigheder forbeholdes <br> Videorettigheder ejes af Navya Tech</p></a>
+          
+      </div>
+	
+	</div>
+      
+    </footer>
+
+
+    <div class="modal fade" id="privatlivsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content bgcolor p-5">
+          <div class="modal-header">
+              <h3 class="modal-title text-center py-0 my-0" id="exampleModalLabel">Cookie- og privatlivspolitik</h3>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <!--http://minecookies.org/skabelon-til-cookie-og-privatlivspolitik/-->
+                          <h5 class="h5-responsive pt-5 pb-2">Introduktion</h5>
+                          <p>Når du besøger vores website indsamles der oplysninger om dig, som bruges til at tilpasse og forbedre vores indhold og til at øge værdien af de annoncer, der vises på siden. Hvis du ikke ønsker, at der indsamles oplysninger, bør du slette dine cookies (<a href="http://minecookies.org/cookiehandtering" hreflang="da">se vejledning</a> ) og undlade videre brug af websitet. Nedenfor har vi uddybet, hvilke informationer der indsamles, deres formål og hvilke tredjeparter, der har adgang til dem.</p>
+
+                          <h5 class="h5-responsive pt-5 pb-2">Cookie</h5>
+                          <p>Websitet anvender ”cookies”, der er en tekstfil, som gemmes på din computer, mobil el. tilsvarende med det formål at genkende den, huske indstillinger, udføre statistik og målrette annoncer. Cookies kan ikke indeholde skadelig kode som f.eks. virus.
+                          Det er muligt at slette eller blokere for cookies. Se vejledning: <a href="http://minecookies.org/cookiehandtering" hreflang="da">http://minecookies.org/cookiehandtering</a> 
+
+                          Hvis du sletter eller blokerer cookies vil annoncer kunne blive mindre relevante for dig og optræde hyppigere. Du kan desuden risikere at websitet ikke fungerer optimalt samt at der er indhold, du ikke kan få adgang til.
+
+                          Websitet indeholder cookies fra tredjeparter, der i varierende omfang kan omfatte:</p>
+
+                          <ul>
+                              <li><a href="http://danskemedier.dk/digital/frq3rdparties/" hreflang="da">Hyppige tredjeparter ved digital annoncering</a></li>
+                              <li><a href="https://www.google.com/">Google.com</a></li>
+                          </ul>
+                          
+
+                          <h5 class="h5-responsive pt-5 pb-2">Generelt</h5>
+                          <p>Personoplysninger er alle slags informationer, der i et eller andet omfang kan henføres til dig. Når du benytter vores website indsamler og behandler vi en række sådanne informationer. Det sker f.eks. ved alm. tilgang af indhold, hvis du tilmelder dig vores nyhedsbrev, deltager i konkurrencer eller undersøgelser, registrerer dig som bruger eller abonnent, øvrig brug af services eller foretager køb via websitet.
+
+                          Vi indsamler og behandler typisk følgende typer af oplysninger: Et unikt ID og tekniske oplysninger om din computer, tablet eller mobiltelefon, dit IP-nummer, geografisk placering, samt hvilke sider du klikker på (interesser). I det omfang du selv giver eksplicit samtykke hertil og selv indtaster informationerne behandles desuden: Navn, telefonnummer, e-mail, adresse og betalingsoplysninger. Det vil typisk være i forbindelse med oprettelse af login eller ved køb.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Sikkerhed</h5>
+                          <p>Vi har truffet tekniske og organisatoriske foranstaltninger mod, at dine oplysninger hændeligt eller ulovligt bliver slettet, offentliggjort, fortabt, forringet eller kommer til uvedkommendes kendskab, misbruges eller i øvrigt behandles i strid med lovgivningen.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Formål</h5>
+                          <p>Oplysningerne bruges til at identificere dig som bruger og vise dig de annoncer, som vil have størst sandsynlighed for at være relevante for dig, at registrere dine køb og betalinger, samt at kunne levere de services, du har efterspurgt, som f.eks. at fremsende et nyhedsbrev. Herudover anvender vi oplysningerne til at optimere vores services og indhold.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Periode for opbevaring</h5>
+                          <p>Oplysningerne opbevares i det tidsrum, der er tilladt i henhold til lovgivningen, og vi sletter dem, når de ikke længere er nødvendige. Perioden afhænger af karakteren af oplysningen og baggrunden for opbevaring. Det er derfor ikke muligt at angive en generel tidsramme for, hvornår informationer slettes.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Videregivelse af oplysninger</h5>
+                          <p>Data om din brug af websitet, hvilke annoncer, du modtager og evt. klikker på, geografisk placering, køn og alderssegment m.v. videregives til tredjeparter i det omfang disse oplysninger er kendt. Du kan se hvilke tredjeparter, der er tale om, i afsnittet om ”Cookies” ovenfor. Oplysningerne anvendes til målretning af annoncering.
+
+                          Vi benytter herudover en række tredjeparter til opbevaring og behandling af data. Disse behandler udelukkende oplysninger på vores vegne og må ikke anvende dem til egne formål.
+
+                          Videregivelse af personoplysninger som navn og e-mail m.v. vil kun ske, hvis du giver samtykke til det. Vi anvender kun databehandlere i EU eller i lande, der kan give dine oplysninger en tilstrækkelig beskyttelse.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Indsigt og klager</h5>
+                          <p>Du har ret til at få oplyst, hvilke personoplysninger, vi behandler om dig. Du kan desuden til enhver tid gøre indsigelse mod, at oplysninger anvendes. Du kan også tilbagekalde dit samtykke til, at der bliver behandlet oplysninger om dig. Hvis de oplysninger, der behandles om dig, er forkerte har du ret til at de bliver rettet eller slettet. Henvendelse herom kan ske til: info@eksamen.dk. Hvis du vil klage over vores behandling af dine personoplysninger, har du også mulighed for at tage kontakt til Datatilsynet.</p>
+
+
+                          <h5 class="h5-responsive pt-5 pb-2">Udgiver</h5>
+                          <p>Websitet ejes og publiceres af:</p>
+                          <p class="font-weight-bold">Dryve</p>
+                          <p>Ålegården 2-4</p>
+                          <p>6000 Kolding</p>
+                          <p>Telefon: 12345678</p>
+                          <p>email: info@eksamen.dk</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer text-center">
+              <button style="color: white;" type="button" class="button3 h4-size mx-auto" data-dismiss="modal">Luk</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+	<!-- Script til animation -->
+	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<script src="js/dryve_animation.js"></script>
+	<script src="js/appanimation.js"></script>
+</body>
+</html>
